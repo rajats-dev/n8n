@@ -12,7 +12,7 @@ export class LinkedInOAuth2Api implements ICredentialType {
 	properties: INodeProperties[] = [
 		{
 			displayName:
-				'LinkedIn standard apps typically do not issue refresh tokens. Access tokens expire (often after ~60 days). When it expires, you’ll need to reconnect the credentials.',
+				'Standard LinkedIn apps issue access tokens valid for 60 days and do not return a refresh token. You will need to reconnect this credential when the token expires. Automatic token refresh requires <a href="https://learn.microsoft.com/en-us/linkedin/marketing/" target="_blank">Marketing Developer Platform</a> access from LinkedIn.',
 			name: 'standardAuthNotice',
 			type: 'notice',
 			default: '',
